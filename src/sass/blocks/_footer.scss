@@ -1,0 +1,41 @@
+.footer {
+  @extend .layout-padding;
+  background-color: #fff;
+}
+
+.footer__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px 0;
+  justify-content: space-between;
+    .right {
+      display: flex;
+      align-items: center;
+    }
+  .left {
+    width: 50%;
+  }
+}
+
+.linkedin {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+    p {
+      font-size: 15px;
+      font-family: $font-family_medium;
+    }
+    .icon {
+      margin-left: 16px;
+        img {
+          width: 24px;
+          display: block;
+        }
+    }
+}
+
+.impressum {
+  opacity: 0.6;
+}

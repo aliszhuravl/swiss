@@ -1,0 +1,38 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  background-color: transparent;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.page__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.page__item {
+  @extend .layout-padding;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: transparent;
+    &_inner {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+}

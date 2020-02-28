@@ -1,0 +1,30 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $color-black;
+  font-family: $font-family_medium;
+  border-bottom: 1px solid $color-black;
+
+  &:hover {
+    color: $color-red;
+    border-bottom: 1px solid transparent;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_white {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  &:hover {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+  }
+}

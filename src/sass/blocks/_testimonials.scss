@@ -1,0 +1,117 @@
+.slider {
+  width: 100%;
+  padding: 30px 0;
+  &__inner {
+    width: 100%;
+    margin-bottom: 60px !important;
+    &_slide {
+      width: 100%;
+        &-box {
+          width: 100%;
+          max-width: 950px;
+          padding-left: 200px;
+          position: relative;
+          .quote {
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 40px;
+          }
+          .person {
+            width: 100%;
+            display: flex;
+            align-items: center;
+              &_photo {
+                margin-right: 32px;
+                width: 93px;
+                height: 93px;
+                  img {
+                    display: block;
+                    width: 100%;
+                  }
+              }
+              &_name {
+                .name {
+                  font-family: $font-family_bold;
+                }
+              }
+          }
+            &:after {
+              z-index: 2;
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 90px;
+              background-image: url('../img/q.svg');
+              background-repeat: no-repeat;
+              width: 32px;
+              height: 32px;
+            }
+        }
+    }
+  }
+}
+
+.slider_nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    .btns {
+      width: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  .nums {
+    font-size: 16px;
+  }
+}
+
+.slick-dots {
+  bottom: -75px;
+  width: 70%;
+  border-top: 1px solid #000;
+  height: 3px;
+  margin-left: 200px;
+  justify-content: flex-start;
+  align-items: center;
+    li {
+      width: 20%;
+      margin: 0;
+      margin-top: -1px;
+      height: 1px;
+      background-color: #000;
+      opacity: 0;
+    }
+    li.slick-active {
+      color: $color-red;
+      height: 3px;
+      opacity: 1;
+    }
+}
+
+.btn_left {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  transform: rotate(-135deg);
+  opacity: 0.6;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn_right {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
