@@ -47,10 +47,27 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        speed: 900,
+        speed: 500,
         arrows: true,
         prevArrow: $('#btn_prev_c'),
         nextArrow: $('#btn_next_c')
+    });
+
+    $('.items_carousel').on('afterChange', function() {
+        console.log('piu');
+        $('.banner_img').addClass('get_bigger');
+
+    });
+
+    $('.items_carousel').on('beforeChange', function(){
+        console.log('uip');
+        $('.banner_img').removeClass('get_bigger');
+
+    });
+
+    $('.items_carousel').init( function(){
+        $('.banner_img').addClass('get_bigger');
+
     });
 
     $('.items_carousel')

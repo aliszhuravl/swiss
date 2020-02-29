@@ -102,7 +102,6 @@
     margin-bottom: 32px;
     &:nth-child(3n+3) {
       margin-right: 0;
-      margin-bottom: 0;
     }
   }
   .map_box .page__inner .page__item {
@@ -135,5 +134,53 @@
   }
   .footer__inner .impressum {
     margin-top: 16px;
+  }
+
+  .map_box {
+    .right {
+      display: none;
+    }
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .vision_box .page__item .right .layers .bg .three .hint {
+    top: -75%;
+    bottom: auto;
+    right: 120%;
+    left: auto;
+    min-width: 220px;
+    &:after {
+      top: 50%;
+      left: auto;
+      bottom: auto;
+      right: -14px;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+  .vision_box .page__item .right .layers .bg .one .hint {
+    left: -50%;
+    right: auto;
+    bottom: 120%;
+    &:after {
+      right: auto;
+      left: 60px;
+    }
+  }
+  .vision_box .page__item .right .layers .bg .two .hint {
+    top: auto;
+    bottom: 120%;
+    right: 0;
+    min-width: 220px;
+    left: auto;
+    &:after {
+      top: auto;
+      right: 20px;
+      bottom: -9px;
+      left: auto;
+      border-bottom: 0;
+      border-top: 10px solid #fff;
+    }
   }
 }

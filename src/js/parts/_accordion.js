@@ -10,6 +10,7 @@ $(document).ready(function() {
             el: this.el,
             multiple: this.multiple
         }, this.dropdown)
+
     };
 
     Accordion.prototype.dropdown = function(e) {
@@ -17,12 +18,12 @@ $(document).ready(function() {
         $this = $(this);
         $next = $this.next();
 
-        $next.slideToggle(150);
+        // $next.fadeIn(500);
         $this.parent().toggleClass('accordion__item_open');
 
         // collapse other accordions
         if (!e.data.multiple) {
-            $el.find('.accordion__content').not($next).slideUp().parent().removeClass('accordion__item_open');
+            $el.find('.accordion__content').not($next).parent().removeClass('accordion__item_open');
         };
     };
 

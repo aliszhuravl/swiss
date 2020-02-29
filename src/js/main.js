@@ -3,5 +3,5 @@
 //= parts/_scrolling.js
 //= parts/_slick.js
 //= parts/_burger.js
-//= parts/_accordion.js
 //= parts/_map.js
+//= parts/_accordion.js

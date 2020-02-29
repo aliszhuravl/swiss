@@ -2,7 +2,7 @@
   @extend .layout-padding;
   background-color: #fff;
   height: 100vh;
-  min-height: 800px;
+  min-height: 600px;
   position: relative;
   &__inner {
     @extend .layout-inner;
@@ -13,6 +13,7 @@
     align-items: center;
     height: 100%;
       &_title {
+        margin-top: 80px;
         width: 100%;
         max-width: 50%;
         h1 {
@@ -39,4 +40,9 @@
     z-index: 1;
     content: '';
   }
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-start;
 }
