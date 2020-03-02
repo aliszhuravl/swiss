@@ -4,6 +4,8 @@
   height: 100vh;
   min-height: 600px;
   position: relative;
+
+  overflow: hidden;
   &__inner {
     @extend .layout-inner;
     position: relative;
@@ -18,15 +20,35 @@
         max-width: 50%;
         h1 {
           max-width: 540px;
+
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(40%);
+          transition: all 0.4s cubic-bezier(0, .93, .77, 1.47) 0.3s;
+
         }
-          p {
-            max-width: 440px;
-            margin-bottom: 40px;
-            font-size: 16px;
-          }
+
+        .title_text {
+          opacity: 0;
+          transition: all 0.4s;
+            p {
+              max-width: 440px;
+              margin-bottom: 40px;
+              font-size: 16px;
+            }
+        }
+        .sub_visible {
+          opacity: 1;
+        }
       }
+
+    .text_visible {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
-  &:after {
+  .bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,6 +61,13 @@
     background-size: cover;
     z-index: 1;
     content: '';
+    opacity: 0;
+  }
+
+  .fone_move {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 6s ease-out, opacity 1.5s ease-out;
   }
 }
 

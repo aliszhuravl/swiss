@@ -9,6 +9,11 @@
 </head>
 <body>
 <div class="page-container page-main">
+    <div id="preloader" class="preloader active_load">
+        <div class="load_line">
+            <div class="load_line__inner" id="loader"></div>
+        </div>
+    </div>
     <header class="header">
         <div class="header__inner">
            <div class="logo">
@@ -36,17 +41,20 @@
     <section class="hero">
         <div class="hero__inner">
             <div class="hero__inner_title">
-                <h1>A smart society, made in Switzerland</h1>
-                <p>#SwissAutonomousValley brings experts and visionary
-                    entrepreneurs together to create a one of a kind
-                    ecosystem to accelerate the development
-                    of autonomous systems.</p>
-                <div class="buttons">
-                    <a class="btn link-to-block" href="#vision">Learn more</a>
-                    <a class="btn btn_transparent">Become a partner</a>
+                <h1 id="hero_text">A smart society, made in Switzerland</h1>
+                <div class="title_text" id="hero_sub">
+                    <p>#SwissAutonomousValley brings experts and visionary
+                        entrepreneurs together to create a one of a kind
+                        ecosystem to accelerate the development
+                        of autonomous systems.</p>
+                    <div class="buttons">
+                        <a class="btn link-to-block" href="#vision">Learn more</a>
+                        <a class="btn btn_transparent">Become a partner</a>
+                    </div>
                 </div>
             </div>
             </div>
+        <div class="bg" id="fone"></div>
     </section>
     <main class="page">
         <div class="page_box vision_box" id="vision">
@@ -680,31 +688,33 @@
             <div class="page__inner">
                 <section class="page__item">
                     <h2>Become a partner</h2>
-                    <div class="become_box">
-                        <div class="become_box-item">
-                            <p>Become one of the early members of SAV</p>
+                    <div class="become_inner">
+                        <div class="become_box">
+                            <div class="become_box-item">
+                                <p>Become one of the early members of SAV</p>
+                            </div>
+                            <div class="become_box-item">
+                                <p>Take part in shaping the smart society</p>
+                            </div>
+                            <div class="become_box-item">
+                                <p>Be at the center
+                                    of innovation</p>
+                            </div>
+                            <div class="become_box-item">
+                                <p>Become one of the early members of SAV</p>
+                            </div>
+                            <div class="become_box-item">
+                                <p>Take part in shaping the smart society</p>
+                            </div>
+                            <div class="become_box-item">
+                                <p>Be at the center
+                                    of innovation</p>
+                            </div>
                         </div>
-                        <div class="become_box-item">
-                            <p>Take part in shaping the smart society</p>
+                        <div class="join_box">
+                            <button class="btn">Get in touch</button>
                         </div>
-                        <div class="become_box-item">
-                            <p>Become one of the early members of SAV</p>
-                        </div>
-                        <div class="become_box-item">
-                            <p>Be at the center
-                                of innovation</p>
-                        </div>
-                        <div class="become_box-item">
-                            <p>Take part in shaping the smart society</p>
-                        </div>
-                        <div class="become_box-item">
-                            <p>Take part in shaping the smart society</p>
-                        </div>
-                        <!--<div class="become_box-item">-->
-                            <!--<button class="btn">Get in touch</button>-->
-                        <!--</div>-->
                     </div>
-                    <button class="btn">Get in touch</button>
                 </section>
             </div>
         </div>
@@ -722,7 +732,7 @@
                     <div class="icon"><img src="img/in.svg" alt="#"></div>
                 </div>
             </div>
-            <div class="impressum"><a href="#" class="link link_underlined">Impressum</a> <span>| 2020 © All rights reserverd</span></div>
+            <div class="impressum"><a href="#" class="link link_underlined link_disabled">Impressum</a> <span>| 2020 © All rights reserverd</span></div>
         </div>
     </footer>
 
@@ -730,15 +740,15 @@
             <div class="menu__inner">
 
                 <div class="menu_body">
-                    <!--<ul class="nav__list">-->
-                        <!--<li class="nav__link"><a href="#vision" class="link-to-block">Vision</a></li>-->
-                        <!--<li class="nav__link"><a href="#cases" class="link-to-block">Cases</a></li>-->
-                        <!--<li class="nav__link"><a href="#partners" class="link-to-block">Partners</a></li>-->
-                        <!--<li class="nav__link"><a href="#team" class="link-to-block">Team</a></li>-->
-                        <!--<li class="nav__link"><a href="#events" class="link-to-block">Events</a></li>-->
-                    <!--</ul>-->
+                    <ul class="nav__list">
+                        <li class="nav__link"><a href="#" class="link-to-block">Vision</a></li>
+                        <li class="nav__link"><a href="#" class="link-to-block">Cases</a></li>
+                        <li class="nav__link"><a href="#" class="link-to-block">Partners</a></li>
+                        <li class="nav__link"><a href="#" class="link-to-block">Team</a></li>
+                        <li class="nav__link"><a href="#" class="link-to-block">Events</a></li>
+                    </ul>
 
-                    <!--<button class="btn">Become a partner</button>-->
+                    <button class="btn">Become a partner</button>
                 </div>
             </div>
         </div>

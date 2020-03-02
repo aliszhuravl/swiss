@@ -184,4 +184,13 @@
   .divider {
     display: block;
   }
+
+  .become_inner {
+    flex-direction: column;
+  }
+  .footer__inner {
+    .left {
+      padding-left: 20px;
+    }
+  }
 }

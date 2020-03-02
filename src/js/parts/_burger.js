@@ -22,7 +22,4 @@
         }
     });
 
-    $('.menu-mobile__close').on('click', function () {
-        body.addClass('menu-mobile_closed');
-    });
 })(jQuery);

@@ -41,13 +41,17 @@
 
 .menu_mobile {
   .menu__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     .menu_body {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 100%;
+      height: 80%;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
         .nav__list {
           margin-right: 0;
           width: 100%;

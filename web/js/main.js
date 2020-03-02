@@ -114,29 +114,28 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: true,
-        speed: 500,
+        // fade: true,
+        speed: 700,
         arrows: true,
         prevArrow: $('#btn_prev_c'),
         nextArrow: $('#btn_next_c')
     });
 
-    $('.items_carousel').on('afterChange', function() {
-        console.log('piu');
-        $('.banner_img').addClass('get_bigger');
-
-    });
-
-    $('.items_carousel').on('beforeChange', function(){
-        console.log('uip');
-        $('.banner_img').removeClass('get_bigger');
-
-    });
-
-    $('.items_carousel').init( function(){
-        $('.banner_img').addClass('get_bigger');
-
-    });
+    // $('.items_carousel').on('afterChange', function() {
+    //     $('.banner_img').addClass('get_bigger');
+    //
+    // });
+    //
+    // $('.items_carousel').on('beforeChange', function(){
+    //     console.log('uip');
+    //     $('.banner_img').removeClass('get_bigger');
+    //
+    // });
+    //
+    // $('.items_carousel').init( function(){
+    //     $('.banner_img').addClass('get_bigger');
+    //
+    // });
 
     $('.items_carousel')
         .on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -168,9 +167,6 @@ $(document).ready(function() {
         }
     });
 
-    $('.menu-mobile__close').on('click', function () {
-        body.addClass('menu-mobile_closed');
-    });
 })(jQuery);
 $(document).ready(function() {
     $(".accordion__item").click(function () {
@@ -271,4 +267,46 @@ $(document).ready(function() {
 
     var accordion = new Accordion($('.accordion'), false);
 
+});
+$(document).ready(function() {
+    var scrolled;
+    window.onscroll = function () {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 80) {
+            $(".header").addClass('header_sticky')
+        }
+        if (80 > scrolled) {
+            $(".header").removeClass('header_sticky')
+        }
+
+    }
+});
+jQuery(document).ready(function($) {
+    $(window).on('load', function() {
+        $('body').addClass('stopped');
+        $('#loader').animate({
+            width: "100%"
+        }, 1200);
+        setTimeout(function() {
+            $('#loader').fadeOut(500);
+        }, 1400);
+        setTimeout(function() {
+            $('#preloader').removeClass('active_load');
+        }, 1800);
+        setTimeout(function() {
+            $('.header').addClass('header_visible');
+        }, 2400);
+        setTimeout(function() {
+            $('#fone').addClass('fone_move');
+        }, 3000);
+        setTimeout(function() {
+            $('#hero_text').addClass('text_visible');
+        }, 3200);
+        setTimeout(function() {
+            $('#hero_sub').addClass('sub_visible');
+        }, 4000);
+        setTimeout(function() {
+            $('body').removeClass('stopped');
+        }, 4000);
+    });
 });

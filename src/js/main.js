@@ -5,3 +5,5 @@
 //= parts/_burger.js
 //= parts/_map.js
 //= parts/_accordion.js
+//= parts/_scroll-menu.js
+//= parts/_preloader.js

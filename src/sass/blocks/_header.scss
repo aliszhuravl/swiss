@@ -1,12 +1,23 @@
 .header {
   @extend .layout-padding;
-  background-color: #fff;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.03);
+  background-color: transparent;
+  box-shadow: none;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 6;
   width: 100%;
+  transition: all 0.2s;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.header_sticky {
+  background-color: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s;
 }
 
 .header__inner {
@@ -28,4 +39,11 @@
   img {
     width: 180px;
   }
+}
+
+.header_visible {
+  visibility: visible;
+  transform: translateY(0%);
+  opacity: 1;
+  transition: all 0.4s;
 }

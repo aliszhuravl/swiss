@@ -134,6 +134,8 @@
   }
   .footer__inner .impressum {
     margin-top: 16px;
+    background-color: #fff;
+    text-align: center;
   }
 
   .map_box {
@@ -145,27 +147,32 @@
     flex-direction: column;
   }
   .vision_box .page__item .right .layers .bg .three .hint {
-    top: -75%;
-    bottom: auto;
-    right: 120%;
     left: auto;
     min-width: 220px;
+    top: auto;
+    right: 120%;
+    bottom: 10%;
     &:after {
-      top: 50%;
       left: auto;
-      bottom: auto;
-      right: -14px;
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
+      top: auto;
+      right: -14px;
+      bottom: 25px;
     }
   }
   .vision_box .page__item .right .layers .bg .one .hint {
-    left: -50%;
     right: auto;
-    bottom: 120%;
+    bottom: auto;
+    left: -50%;
+    top: 120%;
     &:after {
       right: auto;
       left: 60px;
+      bottom: auto;
+      top: -9px;
+      border-bottom: 10px solid #fff;
+      border-top: 0;
     }
   }
   .vision_box .page__item .right .layers .bg .two .hint {
@@ -181,6 +188,15 @@
       left: auto;
       border-bottom: 0;
       border-top: 10px solid #fff;
+    }
+  }
+  .become_inner {
+    .join_box {
+      width: 100%;
+      padding-top: 0;
+        .btn {
+          width: 100%;
+        }
     }
   }
 }
