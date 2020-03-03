@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+
     $(window).on('load', function() {
         $('body').addClass('stopped');
         $('#loader').animate({
@@ -26,4 +26,3 @@ jQuery(document).ready(function($) {
             $('body').removeClass('stopped');
         }, 4000);
     });
-});

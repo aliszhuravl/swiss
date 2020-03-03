@@ -18,7 +18,7 @@
     max-width: 100%;
     margin-top: 80px;
   }
-  .hero:after {
+  .hero .bg {
     background-image: url('../img/mobile_bg.png');
   }
   .hero__inner_title {
@@ -198,5 +198,18 @@
           width: 100%;
         }
     }
+  }
+  .popup {
+    padding: 20px;
+      .cross img {
+        width: 24px;
+      }
+  }
+  .popup .pop_up-header h2 {
+    font-size: 24px;
+  }
+
+  .popup .pop_item p {
+    max-width: 100%;
   }
 }

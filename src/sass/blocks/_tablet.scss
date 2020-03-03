@@ -17,6 +17,15 @@
   .hero__inner {
     flex-direction: row;
   }
+  .hero__inner_title {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 80px;
+  }
+  .hero .bg {
+    background-image: url('../img/bg_tablet.png');
+    background-position: center center;
+  }
   .slider__inner_slide-box {
     padding-left: 90px;
       &:after {
@@ -187,6 +196,10 @@
 
   .become_inner {
     flex-direction: column;
+    align-items: flex-start;
+      .become_box {
+        margin-bottom: 24px;
+      }
   }
   .footer__inner {
     .left {

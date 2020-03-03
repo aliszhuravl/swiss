@@ -46,28 +46,28 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // fade: true,
+        fade: true,
         speed: 700,
         arrows: true,
         prevArrow: $('#btn_prev_c'),
         nextArrow: $('#btn_next_c')
     });
 
-    // $('.items_carousel').on('afterChange', function() {
-    //     $('.banner_img').addClass('get_bigger');
-    //
-    // });
-    //
-    // $('.items_carousel').on('beforeChange', function(){
-    //     console.log('uip');
-    //     $('.banner_img').removeClass('get_bigger');
-    //
-    // });
-    //
-    // $('.items_carousel').init( function(){
-    //     $('.banner_img').addClass('get_bigger');
-    //
-    // });
+    $('.items_carousel').on('afterChange', function() {
+        $('.banner_img').addClass('get_bigger');
+
+    });
+
+    $('.items_carousel').on('beforeChange', function(){
+        console.log('uip');
+        $('.banner_img').removeClass('get_bigger');
+
+    });
+
+    $('.items_carousel').init( function(){
+        $('.banner_img').addClass('get_bigger');
+
+    });
 
     $('.items_carousel')
         .on('beforeChange', function(event, slick, currentSlide, nextSlide){

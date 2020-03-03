@@ -114,28 +114,28 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // fade: true,
+        fade: true,
         speed: 700,
         arrows: true,
         prevArrow: $('#btn_prev_c'),
         nextArrow: $('#btn_next_c')
     });
 
-    // $('.items_carousel').on('afterChange', function() {
-    //     $('.banner_img').addClass('get_bigger');
-    //
-    // });
-    //
-    // $('.items_carousel').on('beforeChange', function(){
-    //     console.log('uip');
-    //     $('.banner_img').removeClass('get_bigger');
-    //
-    // });
-    //
-    // $('.items_carousel').init( function(){
-    //     $('.banner_img').addClass('get_bigger');
-    //
-    // });
+    $('.items_carousel').on('afterChange', function() {
+        $('.banner_img').addClass('get_bigger');
+
+    });
+
+    $('.items_carousel').on('beforeChange', function(){
+        console.log('uip');
+        $('.banner_img').removeClass('get_bigger');
+
+    });
+
+    $('.items_carousel').init( function(){
+        $('.banner_img').addClass('get_bigger');
+
+    });
 
     $('.items_carousel')
         .on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -281,7 +281,7 @@ $(document).ready(function() {
 
     }
 });
-jQuery(document).ready(function($) {
+
     $(window).on('load', function() {
         $('body').addClass('stopped');
         $('#loader').animate({
@@ -308,5 +308,12 @@ jQuery(document).ready(function($) {
         setTimeout(function() {
             $('body').removeClass('stopped');
         }, 4000);
+    });
+$(document).ready(function() {
+    $("#call_popup").click(function () {
+        $("#popup").addClass('visible_popup');
+    });
+    $("#close_popup").click(function () {
+        $("#popup").removeClass('visible_popup');
     });
 });

@@ -13,6 +13,10 @@
 
   visibility: hidden;
   transform: translateY(-100%);
+  -ms-transform:translateY(-100%); /* IE 9 */
+  -moz-transform:translateY(-100%); /* Firefox */
+  -webkit-transform:translateY(-100%); /* Safari and Chrome */
+  -o-transform:translateY(-100%); /* Opera */
   transition: all 0.3s ease-in;
     .load_line {
       height: 4px;
@@ -29,5 +33,9 @@
 .active_load {
   visibility: visible;
   transform: translateY(0%);
+  -ms-transform:translateY(0%); /* IE 9 */
+  -moz-transform:translateY(0%); /* Firefox */
+  -webkit-transform:translateY(0%); /* Safari and Chrome */
+  -o-transform:translateY(0%); /* Opera */
   transition: all 0.3s ease-out;
 }
